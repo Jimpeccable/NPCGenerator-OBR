@@ -4,11 +4,11 @@
   "description": "A stylish NPC generator for Owlbear Rodeo 2.0",
   "version": "1.0.0",
   "author": "Your Name",
-  "icon": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/main/icon.png",
+  "icon": "https://npc-generato-obr.netlify.app/icon.png",
   "action": {
     "title": "NPC Generator",
-    "icon": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/main/icon.png",
-    "popover": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/main/index.html",
+    "icon": "https://npc-generato-obr.netlify.app/icon.png",
+    "popover": "https://npc-generato-obr.netlify.app/index.html",
     "height": 300,
     "width": 400
   }
