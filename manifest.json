@@ -1,14 +1,7 @@
 {
-    "manifest_version": 3,
-    "name": "NPC Generator",
-    "version": "1.0.0",
-    "description": "A tool for generating random NPCs in Owlbear Rodeo.",
-    "permissions": ["activeTab"],
-    "background": {
-        "service_worker": "npc-generator.js"
-    },
-    "action": {
-        "default_popup": "popup.html",
-        "default_title": "NPC Generator"  // Ensure this title is present
-    }
+  "name": "NPC Generator",
+  "description": "A stylish NPC generator for Owlbear Rodeo 2.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "icon": "icon.png"
 }
