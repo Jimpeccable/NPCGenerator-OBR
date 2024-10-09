@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>NPC Generator</title>
-</head>
-<body>
-  <div id="npc-generator-icon" class="top-bar-icon">
-    <img src="icon.png" alt="NPC Generator Icon">
-  </div>
-  <div id="npc-generator-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button">×</span>
-      <h2>NPC Generator</h2>
-      <button id="generate-npc">Generate NPC</button>
-      <div id="npc-result"></div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
+document.getElementById('npc-generator-icon').addEventListener('click', function() {
+  document.getElementById('npc-generator-modal').style.display = 'block';
+});
+
+document.querySelector('.close-button').addEventListener('click', function() {
+  document.getElementById('npc-generator-modal').style.display = 'none';
+});
+
+document.getElementById('generate-npc').addEventListener('click', function() {
+  const names = ['Aragorn', 'Legolas', 'Gimli', 'Frodo'];
+  const traits = ['Brave', 'Cunning', 'Wise', 'Strong'];
+  const randomName = names[Math.floor(Math.random() * names.length)];
+  const randomTrait = traits[Math.floor(Math.random() * traits.length)];
+  document.getElementById('npc-result').innerText = `Name: ${randomName}, Trait: ${randomTrait}`;
+});
