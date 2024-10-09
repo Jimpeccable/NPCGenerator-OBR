@@ -4,5 +4,7 @@
   "description": "A stylish NPC generator for Owlbear Rodeo 2.0",
   "version": "1.0.0",
   "main": "index.js",
-  "icon": "icon.png"
+  "icon": "icon.png",
+  "author": "YJames Coupe",
+  "dependencies": {}
 }
