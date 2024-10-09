@@ -1,10 +1,15 @@
 {
-  "manifest_version": 1,
-  "name": "NPC Generator",
-  "description": "A stylish NPC generator for Owlbear Rodeo 2.0",
+  "name": "Weather Extension",
+  "description": "Adds weather effects to Owlbear Rodeo",
   "version": "1.0.0",
-  "main": "index.js",
-  "icon": "icon.png",
-  "author": "YJames Coupe",
-  "dependencies": {}
+  "author": "James Coupe",
+  "icon": "https://jimpeccable.github.io/WeatherExtension-OBR/icon.svg",
+  "manifest_version": 1,
+  "action": {
+    "title": "Weather Extension",
+    "icon": "https://jimpeccable.github.io/WeatherExtension-OBR/toolbar-icon.svg",
+    "popover": "https://jimpeccable.github.io/WeatherExtension-OBR/index.html",
+    "height": 300,
+    "width": 400
+  }
 }
