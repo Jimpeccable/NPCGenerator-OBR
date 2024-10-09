@@ -9,12 +9,4 @@
     },
     "action": {
         "default_popup": "popup.html",
-        "default_title": "Generate NPC"  // Added title for the action
-    },
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["npc-generator.js"]
-        }
-    ]
-}
+        "default_title": "NPC Generator"  // Added title
