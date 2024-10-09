@@ -7,7 +7,7 @@
   "icon": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/refs/heads/main/icon.png",
   "action": {
     "title": "NPC Generator",
-    "icon": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/refs/heads/main/icon.png",
+    "icon": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/refs/heads/main/icon.svg",
     "popover": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/refs/heads/main/index.html",
     "height": 300,
     "width": 400
