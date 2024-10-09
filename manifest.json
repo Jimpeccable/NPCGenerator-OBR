@@ -3,12 +3,12 @@
   "name": "NPC Generator",
   "description": "A stylish NPC generator for Owlbear Rodeo 2.0",
   "version": "1.0.0",
-  "author": "Your Name",
-  "icon": "icon.png",
+  "author": "James Coupe",
+  "icon": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/refs/heads/main/icon.png",
   "action": {
     "title": "NPC Generator",
-    "icon": "icon.png",
-    "popover": "index.html",
+    "icon": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/refs/heads/main/icon.png",
+    "popover": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/refs/heads/main/index.html",
     "height": 300,
     "width": 400
   }
