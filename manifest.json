@@ -3,9 +3,6 @@
   "description": "Generates random NPCs for use in Owlbear Rodeo.",
   "version": "1.0.0",
   "manifest_version": 1,
-  "background": {
-    "scripts": ["js/npc-generator.js"]
-  },
   "content_scripts": [
     {
       "matches": ["*://app.owlbear.rodeo/*"],
