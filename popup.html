@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>NPC Generator</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -18,7 +18,7 @@
             <p><strong>Appearance:</strong> <span id="npc-appearance"></span></p>
         </div>
     </div>
-    <script src="js/npc-generator.js"></script>
+    <script src="npc-generator.js"></script>
     <script>
         document.getElementById('generate-btn').addEventListener('click', () => {
             chrome.runtime.sendMessage({ type: 'generateNPC' }, (response) => {
