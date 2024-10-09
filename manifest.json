@@ -9,4 +9,6 @@
     },
     "action": {
         "default_popup": "popup.html",
-        "default_title": "NPC Generator"  // Added title
+        "default_title": "NPC Generator"  // Ensure this title is present
+    }
+}
