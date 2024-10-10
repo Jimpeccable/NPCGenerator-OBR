@@ -1,4 +1,6 @@
-document.getElementById('generate-btn').addEventListener('click', generateNPC);
+OBR.onReady(() => {
+  document.getElementById('generate-btn').addEventListener('click', generateNPC);
+});
 
 function generateNPC() {
     const names = ['Arin', 'Borin', 'Cirin', 'Dorin'];
@@ -26,4 +28,17 @@ function generateNPC() {
     `;
 
     document.getElementById('npc-display').innerHTML = npc;
+
+    // Create a text item on the OBR scene with the NPC info
+    OBR.scene.items.create({
+      id: OBR.scene.items.create.id(),
+      type: 'TEXT',
+      text: {
+        plainText: `NPC: ${name}\nSex: ${sex}\nAlignment: ${alignment}\nDemeanor: ${demeanor}\nSecret: ${secret}\nMoney: ${gold}G, ${silver}S, ${copper}C`,
+        richText: npc
+      },
+      position: { x: 0, y: 0 },
+      height: 200,
+      width: 200
+    });
 }
