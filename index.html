@@ -10,6 +10,7 @@
 <body>
     <div id="app">
         <h1>NPC Generator</h1>
+        <div id="environment-notice"></div>
         <div class="input-group">
             <label for="npc-name">Name:</label>
             <input type="text" id="npc-name" placeholder="Enter NPC name">
@@ -41,6 +42,15 @@
             console.error("Error: ", message, "Source: ", source, "Line: ", lineno, "Column: ", colno, "Error object: ", error);
             document.getElementById('npc-output').innerHTML = `<p style="color: red;">An error occurred: ${message}</p>`;
         }
+        // Check the environment and display a notice
+        document.addEventListener('DOMContentLoaded', () => {
+            const notice = document.getElementById('environment-notice');
+            if (typeof OBR === 'undefined') {
+                notice.innerHTML = '<p style="color: orange;">Note: Running outside Owlbear Rodeo. Some features may be limited.</p>';
+            } else {
+                notice.innerHTML = '<p style="color: green;">Running inside Owlbear Rodeo.</p>';
+            }
+        });
     </script>
 </body>
 </html>
