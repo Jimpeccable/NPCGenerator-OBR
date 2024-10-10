@@ -60,6 +60,16 @@ function getRandomElement(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 
+const alignments = [
+    'Lawful Good', 'Neutral Good', 'Chaotic Good', 'Lawful Neutral', 'True Neutral', 'Chaotic Neutral', 'Lawful Evil', 'Neutral Evil', 'Chaotic Evil'
+];
+
+// Function to generate a random element from an array
+function getRandomElement(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+// Function to generate NPC
 function generateNPC() {
     const firstName = getRandomElement(firstNames);
     const lastName = getRandomElement(lastNames);
@@ -69,38 +79,10 @@ function generateNPC() {
     const characterClass = getRandomElement(classes);
     const subclass = getRandomElement(subclasses[characterClass]);
     const alignment = getRandomElement(alignments);
-    const demeanor = getRandomElement(demeanors);
-    const background = getRandomElement(backgrounds);
-    const motivation = getRandomElement(motivations);
-    const secret = getRandomElement(secrets);
-    const quirk = getRandomElement(quirks);
-    const profession = getRandomElement(professions);
-    
-    const gold = Math.floor(Math.random() * 10);
-    const silver = Math.floor(Math.random() * 20);
-    const copper = Math.floor(Math.random() * 50);
-
-    const numItems = Math.floor(Math.random() * 3) + 1;
-    const npcItems = [];
-    for (let i = 0; i < numItems; i++) {
-        let item;
-        do {
-            item = getRandomElement(items);
-        } while (npcItems.includes(item));
-        npcItems.push(item);
-    }
-
-    const age = Math.floor(Math.random() * 80) + 18;
-    const height = Math.floor(Math.random() * 3) + 4 + "'" + Math.floor(Math.random() * 12);
-    const weight = Math.floor(Math.random() * 150) + 100;
-
-    return {
-        name, sex, race, characterClass, subclass, alignment, demeanor, background,
-        motivation, secret, quirk, profession, gold, silver, copper, items: npcItems,
-        age, height, weight
-    };
+    // ... (rest of the code)
 }
 
+// Event listener for button click
 document.getElementById('generate-btn').addEventListener('click', () => {
     const npc = generateNPC();
     const npcDisplay = document.getElementById('npc-display');
