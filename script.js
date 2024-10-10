@@ -124,8 +124,3 @@ document.getElementById('generate-btn').addEventListener('click', () => {
         <p><strong>Items:</strong> ${npc.items.join(', ')}</p>
     `;
 });
-
-// Owlbear Rodeo integration
-OBR.onReady(() => {
-    OBR.action.setHeight(600);
-});
