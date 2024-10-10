@@ -1,7 +1,3 @@
-Ok... so, now the generator doesn't work but for the first time - is shows in Owlbear Rodeo!!
-
-Here is the manifest:
-
 {
   "name": "NPC Generator",
   "description": "Generates random NPCs for Owlbear Rodeo",
@@ -17,5 +13,3 @@ Here is the manifest:
     "width": 400
   }
 }
-
-The last time it worked - although didn't show in owl bear rodeo it had these files.
