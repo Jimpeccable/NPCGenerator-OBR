@@ -3,12 +3,12 @@
   "description": "Generates random NPCs for Owlbear Rodeo",
   "version": "1.0.0",
   "author": "James",
-  "icon": "icon.svg",
+  "icon": "https://npc-generator-obr.onrender.com/icon.svg",
   "manifest_version": 1,
   "action": {
     "title": "NPC Generator",
-    "icon": "icon.svg",
-    "popover": "index.html",
+    "icon": "https://npc-generator-obr.onrender.com/icon.svg",
+    "popover": "https://npc-generator-obr.onrender.com/index.html",
     "height": 500,
     "width": 400
   }
