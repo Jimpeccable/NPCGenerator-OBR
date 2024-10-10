@@ -75,7 +75,6 @@ function generateNPC() {
     const subclass = getRandomElement(subclasses[characterClass]);
     const alignment = getRandomElement(alignments);
     const demeanor = getRandomElement(demeanors);
-    const background = getRandomElement(backgrounds);
     const motivation = getRandomElement(motivations);
     const secret = getRandomElement(secrets);
     const quirk = getRandomElement(quirks);
