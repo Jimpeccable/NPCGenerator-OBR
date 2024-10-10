@@ -1,15 +1,15 @@
 {
-  "manifest_version": 1,
   "name": "NPC Generator",
-  "description": "A stylish NPC generator for Owlbear Rodeo 2.0",
+  "description": "Generate NPCs for your Owlbear Rodeo 2.0 games",
   "version": "1.0.0",
-  "author": "Your Name",
-  "icon": "https://npc-generato-obr.netlify.app/icon.png",
+  "author": "Jimpeccable",
+  "icon": "/icon.svg",
+  "manifest_version": 1,
   "action": {
     "title": "NPC Generator",
-    "icon": "https://npc-generato-obr.netlify.app/icon.png",
-    "popover": "https://npc-generato-obr.netlify.app/index.html",
-    "height": 300,
+    "icon": "/icon.svg",
+    "popover": "/",
+    "height": 600,
     "width": 400
   }
 }
