@@ -48,7 +48,7 @@ const subclasses = {
     'Necromancer': ['Bone Collector', 'Soul Binder', 'Plague Bringer', 'Reanimator'],
     'Battlemage': ['Spellsword', 'War Caster', 'Rune Knight', 'Arcane Defender'],
     'Swashbuckler': ['Duelist', 'Pirate', 'Daredevil', 'Charmer']
-];
+};
 
 const alignments = [
     'Lawful Good', 'Neutral Good', 'Chaotic Good', 'Lawful Neutral', 'True Neutral', 'Chaotic Neutral', 'Lawful Evil', 'Neutral Evil', 'Chaotic Evil'
