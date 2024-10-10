@@ -1,15 +1,15 @@
 {
-  "name": "NPC Generator",
-  "description": "Generate random NPCs for your Owlbear Rodeo 2.0 games",
-  "version": "1.0.0",
-  "author": "Jimpeccable",
-  "icon": "icon.svg",
-  "manifest_version": 1,
-  "action": {
-    "title": "NPC Generator",
-    "icon": "icon.svg",
-    "popover": "/",
-    "height": 400,
-    "width": 300
-  }
+"name": "NPC Generator",
+"description": "Generate random NPCs for your Owlbear Rodeo 2.0 games",
+"version": "1.0.0",
+"author": "Jimpeccable",
+"icon": "icon.svg",
+"manifest_version": 1,
+"action": {
+"title": "NPC Generator",
+"icon": "icon.svg",
+"popover": "/",
+"height": 400,
+"width": 300
+}
 }
