@@ -1,4 +1,4 @@
-/ Background script
+// Background script
 
 // Arrays for NPC characteristics
 const npcNames = ["Aelar", "Briala", "Drystan", "Elara", "Fenric", "Gwenn"];
