@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #1a1a1a;
-    background-image: url('path/to/your/stylish-background.png');
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;
