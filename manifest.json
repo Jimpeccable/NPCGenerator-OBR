@@ -2,7 +2,7 @@
   "name": "NPC Generator",
   "description": "Generates random NPCs for Owlbear Rodeo",
   "version": "1.0.0",
-  "author": "James",
+  "author": "James Coupe",
   "icon": "https://npc-generator-obr.onrender.com/icon.svg",
   "manifest_version": 1,
   "action": {
