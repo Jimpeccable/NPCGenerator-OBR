@@ -7,6 +7,10 @@ const firstNames = [
     'Orion', 'Piper', 'Quinn', 'Rowan', 'Sage', 'Thea', 'Uma', 'Vex', 'Wren', 'Xander', 'Yara', 'Zephyr'
 ];
 
+const alignments = [
+    'Lawful Good', 'Neutral Good', 'Chaotic Good', 'Lawful Neutral', 'True Neutral', 'Chaotic Neutral', 'Lawful Evil', 'Neutral Evil', 'Chaotic Evil'
+];
+
 const lastNames = [
     'Ironheart', 'Stormwind', 'Nightshade', 'Sunseeker', 'Moonshadow', 'Thornbush', 'Oakenshield',
     'Fireforge', 'Cloudchaser', 'Dawnbringer', 'Frostbeard', 'Shadowweaver', 'Lightfoot', 'Swiftarrow',
