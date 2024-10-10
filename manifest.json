@@ -1,6 +1,6 @@
 {
   "name": "NPC Generator",
-  "description": "Generate NPCs for your Owlbear Rodeo 2.0 games",
+  "description": "Generate random NPCs for your Owlbear Rodeo 2.0 games",
   "version": "1.0.0",
   "author": "Jimpeccable",
   "icon": "icon.svg",
@@ -9,7 +9,7 @@
     "title": "NPC Generator",
     "icon": "icon.svg",
     "popover": "/",
-    "height": 600,
-    "width": 400
+    "height": 400,
+    "width": 300
   }
 }
