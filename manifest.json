@@ -3,12 +3,12 @@
   "description": "Generate NPCs for your Owlbear Rodeo 2.0 games",
   "version": "1.0.0",
   "author": "Jimpeccable",
-  "icon": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/main/icon.svg",
+  "icon": "icon.svg",
   "manifest_version": 1,
   "action": {
     "title": "NPC Generator",
-    "icon": "https://raw.githubusercontent.com/Jimpeccable/NPC-Generator-OBR/main/icon.svg",
-    "popover": "./",
+    "icon": "icon.svg",
+    "popover": "/",
     "height": 600,
     "width": 400
   }
