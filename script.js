@@ -27,6 +27,11 @@ const classes = [
     'Warlock', 'Druid', 'Artificer', 'Blood Hunter', 'Alchemist', 'Psion', 'Shaman', 'Necromancer', 'Battlemage', 'Swashbuckler'
 ];
 
+const demeanors = [
+    'Friendly', 'Hostile', 'Neutral', 'Curious', 'Suspicious', 'Helpful', 'Aloof', 'Aggressive', 'Calm', 'Excited'
+];
+
+
 const subclasses = {
     'Fighter': ['Champion', 'Battle Master', 'Eldritch Knight', 'Arcane Archer', 'Cavalier', 'Samurai'],
     'Wizard': ['Abjuration', 'Conjuration', 'Divination', 'Enchantment', 'Evocation', 'Illusion', 'Necromancy', 'Transmutation'],
