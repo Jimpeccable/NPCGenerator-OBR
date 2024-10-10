@@ -1,60 +1,58 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
 }
 
 #app {
-    background-color: white;
-    border-radius: 10px;
+    background-color: #fff;
+    border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #333;
+    color: #2c3e50;
     text-align: center;
 }
 
-.input-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-}
-
-input[type="text"],
-select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
 button {
+    display: block;
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #3498db;
+    color: #fff;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
     font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #2980b9;
 }
 
 #npc-output {
     margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #ecf0f1;
     border-radius: 4px;
-    background-color: #f9f9f9;
+}
+
+#npc-output h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+#npc-output p {
+    margin: 10px 0;
+}
+
+#npc-output strong {
+    color: #34495e;
 }
