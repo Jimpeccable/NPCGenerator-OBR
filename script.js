@@ -75,9 +75,7 @@ function generateNPC() {
     const subclass = getRandomElement(subclasses[characterClass]);
     const alignment = getRandomElement(alignments);
     const demeanor = getRandomElement(demeanors);
-    const motivation = getRandomElement(motivations);
     const secret = getRandomElement(secrets);
-    const quirk = getRandomElement(quirks);
     const profession = getRandomElement(professions);
     
     const gold = Math.floor(Math.random() * 10);
@@ -114,7 +112,6 @@ document.getElementById('generate-btn').addEventListener('click', () => {
         <p><strong>Sex:</strong> ${npc.sex}</p>
         <p><strong>Race:</strong> ${npc.race}</p>
         <p><strong>Class:</strong> ${npc.characterClass} (${npc.subclass})</p>
-        <p><strong>Background:</strong> ${npc.background}</p>
         <p><strong>Profession:</strong> ${npc.profession}</p>
         <p><strong>Age:</strong> ${npc.age}</p>
         <p><strong>Height:</strong> ${npc.height}</p>
