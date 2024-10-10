@@ -1,126 +1,44 @@
-// Arrays for NPC characteristics
-const firstNames = [
-    'Arin', 'Borin', 'Cirin', 'Dorin', 'Erin', 'Farin', 'Garin', 'Harin', 'Irin', 'Jarin',
-    'Karin', 'Lorin', 'Marin', 'Norin', 'Orin', 'Parin', 'Quirin', 'Rarin', 'Sarin', 'Tarin',
-    'Urin', 'Varin', 'Warin', 'Xarin', 'Yarin', 'Zarin', 'Alira', 'Brynn', 'Cade', 'Darius',
-    'Elara', 'Finn', 'Gideon', 'Hestia', 'Iris', 'Jace', 'Keira', 'Liam', 'Mira', 'Nyla',
-    'Orion', 'Piper', 'Quinn', 'Rowan', 'Sage', 'Thea', 'Uma', 'Vex', 'Wren', 'Xander', 'Yara', 'Zephyr'
-];
-
-const lastNames = [
-    'Ironheart', 'Stormwind', 'Nightshade', 'Sunseeker', 'Moonshadow', 'Thornbush', 'Oakenshield',
-    'Fireforge', 'Cloudchaser', 'Dawnbringer', 'Frostbeard', 'Shadowweaver', 'Lightfoot', 'Swiftarrow',
-    'Blackthorn', 'Silverblade', 'Goldhammer', 'Windrider', 'Stonebreaker', 'Starfall', 'Ravenclaw',
-    'Thunderstrike', 'Snowmane', 'Wildflower', 'Seastrider', 'Mountainheart', 'Riverdancer', 'Skywalker',
-    'Earthkeeper', 'Flamecaller'
-];
-
-const sexes = ['Male', 'Female', 'Non-binary', 'Genderfluid', 'Agender', 'Bigender', 'Two-Spirit', 'Demigender'];
-
-const races = [
-    'Human', 'Elf', 'Dwarf', 'Halfling', 'Gnome', 'Half-Orc', 'Tiefling', 'Dragonborn', 'Half-Elf', 'Aasimar',
-    'Goliath', 'Kenku', 'Tabaxi', 'Firbolg', 'Triton', 'Genasi', 'Changeling', 'Warforged', 'Kalashtar', 'Shifter'
-];
-
-const classes = [
-    'Fighter', 'Wizard', 'Rogue', 'Cleric', 'Paladin', 'Ranger', 'Bard', 'Barbarian', 'Monk', 'Sorcerer',
-    'Warlock', 'Druid', 'Artificer', 'Blood Hunter', 'Alchemist', 'Psion', 'Shaman', 'Necromancer', 'Battlemage', 'Swashbuckler'
-];
-
-const demeanors = [
-    'Friendly', 'Hostile', 'Neutral', 'Curious', 'Suspicious', 'Helpful', 'Aloof', 'Aggressive', 'Calm', 'Excited'
-];
-
-
-const subclasses = {
-    'Fighter': ['Champion', 'Battle Master', 'Eldritch Knight', 'Arcane Archer', 'Cavalier', 'Samurai'],
-    'Wizard': ['Abjuration', 'Conjuration', 'Divination', 'Enchantment', 'Evocation', 'Illusion', 'Necromancy', 'Transmutation'],
-    'Rogue': ['Thief', 'Assassin', 'Arcane Trickster', 'Swashbuckler', 'Mastermind', 'Scout'],
-    'Cleric': ['Life', 'Light', 'Knowledge', 'Nature', 'Tempest', 'Trickery', 'War', 'Grave', 'Forge'],
-    'Paladin': ['Devotion', 'Ancients', 'Vengeance', 'Conquest', 'Redemption', 'Glory'],
-    'Ranger': ['Hunter', 'Beast Master', 'Gloom Stalker', 'Horizon Walker', 'Monster Slayer'],
-    'Bard': ['Lore', 'Valor', 'Glamour', 'Swords', 'Whispers', 'Eloquence'],
-    'Barbarian': ['Berserker', 'Totem Warrior', 'Ancestral Guardian', 'Storm Herald', 'Zealot'],
-    'Monk': ['Open Hand', 'Shadow', 'Four Elements', 'Drunken Master', 'Kensei', 'Sun Soul'],
-    'Sorcerer': ['Draconic Bloodline', 'Wild Magic', 'Divine Soul', 'Shadow Magic', 'Storm Sorcery'],
-    'Warlock': ['Archfey', 'Fiend', 'Great Old One', 'Celestial', 'Hexblade'],
-    'Druid': ['Land', 'Moon', 'Dreams', 'Shepherd', 'Spores', 'Stars'],
-    'Artificer': ['Alchemist', 'Artillerist', 'Battle Smith', 'Armorer'],
-    'Blood Hunter': ['Order of the Ghostslayer', 'Order of the Lycan', 'Order of the Mutant', 'Order of the Profane Soul'],
-    'Alchemist': ['Herbalist', 'Poisoner', 'Transmuter', 'Explosives Expert'],
-    'Psion': ['Telepath', 'Kinetic', 'Seer', 'Shaper'],
-    'Shaman': ['Spirit Walker', 'Elementalist', 'Witch Doctor', 'Totem Caller'],
-    'Necromancer': ['Bone Collector', 'Soul Binder', 'Plague Bringer', 'Reanimator'],
-    'Battlemage': ['Spellsword', 'War Caster', 'Rune Knight', 'Arcane Defender'],
-    'Swashbuckler': ['Duelist', 'Pirate', 'Daredevil', 'Charmer']
-};
-
-const alignments = [
-    'Lawful Good', 'Neutral Good', 'Chaotic Good', 'Lawful Neutral', 'True Neutral', 'Chaotic Neutral', 'Lawful Evil', 'Neutral Evil', 'Chaotic Evil'
-];
-
-// Function to generate a random element from an array
-function getRandomElement(array) {
-    return array[Math.floor(Math.random() * array.length)];
-}
-
-// Function to generate NPC
-function generateNPC() {
-    const firstName = getRandomElement(firstNames);
-    const lastName = getRandomElement(lastNames);
-    const name = `${firstName} ${lastName}`;
-    const sex = getRandomElement(sexes);
-    const race = getRandomElement(races);
-    const characterClass = getRandomElement(classes);
-    const subclass = getRandomElement(subclasses[characterClass]);
-    const alignment = getRandomElement(alignments);
-    const demeanor = getRandomElement(demeanors);
-    const secret = getRandomElement(secrets);
-    const profession = getRandomElement(professions);
-    
-    const gold = Math.floor(Math.random() * 10);
-    const silver = Math.floor(Math.random() * 20);
-    const copper = Math.floor(Math.random() * 50);
-
-    const numItems = Math.floor(Math.random() * 3) + 1;
-    const npcItems = [];
-    for (let i = 0; i < numItems; i++) {
-        let item;
-        do {
-            item = getRandomElement(items);
-        } while (npcItems.includes(item));
-        npcItems.push(item);
-    }
-
-    const age = Math.floor(Math.random() * 80) + 18;
-    const height = Math.floor(Math.random() * 3) + 4 + "'" + Math.floor(Math.random() * 12);
-    const weight = Math.floor(Math.random() * 150) + 100;
-
-    return {
-        name, sex, race, characterClass, subclass, alignment, demeanor, background,
-        motivation, secret, quirk, profession, gold, silver, copper, items: npcItems,
-        age, height, weight
-    };
-}
-
-// Event listener for button click
-document.getElementById('generate-btn').addEventListener('click', () => {
-    const npc = generateNPC();
-    const npcDisplay = document.getElementById('npc-display');
-    npcDisplay.innerHTML = `
-        <h2>${npc.name}</h2>
-        <p><strong>Sex:</strong> ${npc.sex}</p>
-        <p><strong>Race:</strong> ${npc.race}</p>
-        <p><strong>Class:</strong> ${npc.characterClass} (${npc.subclass})</p>
-        <p><strong>Profession:</strong> ${npc.profession}</p>
-        <p><strong>Age:</strong> ${npc.age}</p>
-        <p><strong>Height:</strong> ${npc.height}</p>
-        <p><strong>Weight:</strong> ${npc.weight} lbs</p>
-        <p><strong>Alignment:</strong> ${npc.alignment}</p>
-        <p><strong>Demeanor:</strong> ${npc.demeanor}</p>
-        <p><strong>Secret:</strong> ${npc.secret}</p>
-        <p><strong>Quirk:</strong> ${npc.quirk}</p>
-        <p><strong>Money:</strong> ${npc.gold} Gold, ${npc.silver} Silver, ${npc.copper} Copper</p>
-        <p><strong>Items:</strong> ${npc.items.join(', ')}</p>
-    `;
+OBR.onReady(() => {
+    document.getElementById('generate-btn').addEventListener('click', generateNPC);
 });
+
+function generateNPC() {
+    const names = ['Arin', 'Borin', 'Cirin', 'Dorin'];
+    const sexes = ['Male', 'Female', 'Non-binary'];
+    const alignments = ['Lawful Good', 'Neutral', 'Chaotic Evil'];
+    const demeanors = ['Friendly', 'Hostile', 'Neutral'];
+    const secrets = ['Has a hidden treasure', 'Is a spy', 'Has a dark past'];
+    
+    const name = names[Math.floor(Math.random() * names.length)];
+    const sex = sexes[Math.floor(Math.random() * sexes.length)];
+    const alignment = alignments[Math.floor(Math.random() * alignments.length)];
+    const demeanor = demeanors[Math.floor(Math.random() * demeanors.length)];
+    const secret = secrets[Math.floor(Math.random() * secrets.length)];
+    const gold = Math.floor(Math.random() * 100);
+    const silver = Math.floor(Math.random() * 100);
+    const copper = Math.floor(Math.random() * 100);
+
+    const npc = `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Sex:</strong> ${sex}</p>
+        <p><strong>Alignment:</strong> ${alignment}</p>
+        <p><strong>Demeanor:</strong> ${demeanor}</p>
+        <p><strong>Secret:</strong> ${secret}</p>
+        <p><strong>Money:</strong> ${gold} Gold, ${silver} Silver, ${copper} Copper</p>
+    `;
+
+    document.getElementById('npc-display').innerHTML = npc;
+
+    // Create a text item on the OBR scene with the NPC info
+    OBR.scene.items.create({
+        id: OBR.scene.items.create.id(),
+        type: 'TEXT',
+        text: {
+            plainText: `NPC: ${name}\nSex: ${sex}\nAlignment: ${alignment}\nDemeanor: ${demeanor}\nSecret: ${secret}\nMoney: ${gold}G, ${silver}S, ${copper}C`,
+            richText: npc
+        },
+        position: { x: 0, y: 0 },
+        height: 200,
+        width: 200
+    });
+}
