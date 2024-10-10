@@ -1,17 +1,17 @@
 {
-    "name": "npc-generator-obr",
-    "version": "1.0.0",
-    "description": "NPC Generator for Owlbear Rodeo",
-    "main": "index.js",
-    "scripts": {
-      "dev": "vite --host",
-      "build": "vite build",
-      "serve": "vite preview"
-    },
-    "dependencies": {
-      "@owlbear-rodeo/sdk": "^1.0.0"
-    },
-    "devDependencies": {
-      "vite": "^4.0.0"
-    }
+  "name": "npc-generator-obr",
+  "version": "1.0.0",
+  "description": "NPC Generator for Owlbear Rodeo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@owlbear-rodeo/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
   }
+}
