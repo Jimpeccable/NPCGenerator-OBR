@@ -1,7 +1,5 @@
-// Check if we're running inside Owlbear Rodeo
-const isInOBR = typeof OBR !== 'undefined';
+// ... (keep the existing code at the top)
 
-// Function to initialize the app
 function initializeApp() {
     console.log("Initializing app");
     const generateButton = document.getElementById('generate-npc');
@@ -11,18 +9,24 @@ function initializeApp() {
         throw new Error("Required elements not found");
     }
 
+    console.log("Adding event listener to generate button");
     generateButton.addEventListener('click', generateNPC);
 
     function generateNPC() {
+        console.log("Generate NPC button clicked");
         try {
             console.log("Generating NPC");
             const name = document.getElementById('npc-name').value || 'Unknown';
             const race = document.getElementById('npc-race').value;
             const npcClass = document.getElementById('npc-class').value;
 
+            console.log(`Name: ${name}, Race: ${race}, Class: ${npcClass}`);
+
             const stats = generateStats();
             const personality = generatePersonality();
             const quirk = generateQuirk();
+
+            console.log("Generated attributes:", { stats, personality, quirk });
 
             const npcDescription = `
                 <h2>${name}</h2>
@@ -41,40 +45,7 @@ function initializeApp() {
         }
     }
 
-    function generateStats() {
-        return {
-            str: Math.floor(Math.random() * 6) + 8,
-            dex: Math.floor(Math.random() * 6) + 8,
-            con: Math.floor(Math.random() * 6) + 8,
-            int: Math.floor(Math.random() * 6) + 8,
-            wis: Math.floor(Math.random() * 6) + 8,
-            cha: Math.floor(Math.random() * 6) + 8
-        };
-    }
-
-    function generatePersonality() {
-        const personalities = [
-            "Friendly and outgoing",
-            "Shy and reserved",
-            "Gruff but well-meaning",
-            "Eccentric and unpredictable",
-            "Calm and collected",
-            "Hot-headed and impulsive"
-        ];
-        return personalities[Math.floor(Math.random() * personalities.length)];
-    }
-
-    function generateQuirk() {
-        const quirks = [
-            "Always speaks in rhymes",
-            "Collects unusual trinkets",
-            "Afraid of heights",
-            "Can't resist shiny objects",
-            "Constantly quotes ancient proverbs",
-            "Has an invisible 'friend'"
-        ];
-        return quirks[Math.floor(Math.random() * quirks.length)];
-    }
+    // ... (keep the rest of the functions)
 }
 
 // Main execution
@@ -94,5 +65,10 @@ try {
     }
 } catch (error) {
     console.error("Error in script execution:", error);
-    document.getElementById('npc-output').innerHTML = `<p style="color: red;">Error in script execution: ${error.message}</p>`;
+    const npcOutput = document.getElementById('npc-output');
+    if (npcOutput) {
+        npcOutput.innerHTML = `<p style="color: red;">Error in script execution: ${error.message}</p>`;
+    } else {
+        console.error("Could not find npc-output element");
+    }
 }
