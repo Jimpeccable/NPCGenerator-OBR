@@ -1,4 +1,9 @@
 OBR.onReady(() => {
+    const generateButton = document.createElement('button');
+    generateButton.id = 'generate-btn';
+    generateButton.textContent = 'Generate NPC';
+    document.querySelector('.container').appendChild(generateButton);
+
     document.getElementById('generate-btn').addEventListener('click', generateNPC);
 });
 
