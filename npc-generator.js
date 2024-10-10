@@ -1,3 +1,4 @@
+// npc-generator.js
 // Background script
 
 // Arrays for NPC characteristics
