@@ -118,7 +118,6 @@ document.getElementById('generate-btn').addEventListener('click', () => {
         <p><strong>Weight:</strong> ${npc.weight} lbs</p>
         <p><strong>Alignment:</strong> ${npc.alignment}</p>
         <p><strong>Demeanor:</strong> ${npc.demeanor}</p>
-        <p><strong>Motivation:</strong> ${npc.motivation}</p>
         <p><strong>Secret:</strong> ${npc.secret}</p>
         <p><strong>Quirk:</strong> ${npc.quirk}</p>
         <p><strong>Money:</strong> ${npc.gold} Gold, ${npc.silver} Silver, ${npc.copper} Copper</p>
