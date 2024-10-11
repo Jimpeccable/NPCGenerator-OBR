@@ -3,12 +3,12 @@
   "description": "Generate random NPCs with attributes and money",
   "version": "1.0.0",
   "author": "James Coupe",
-  "icon": "/icon.png",
+  "icon": "https://npc-generator-obr.onrender.com/icon.png",
   "manifest_version": 1,
   "action": {
     "title": "NPC Generator",
-    "icon": "/icon.png",
-    "popover": "/",
+    "icon": "https://npc-generator-obr.onrender.com/icon.png",
+    "popover": "https://npc-generator-obr.onrender.com/",
     "height": 600,
     "width": 400
   }
