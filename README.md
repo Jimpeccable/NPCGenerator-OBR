@@ -73,3 +73,4 @@ Stay tuned for updates!
 James Coupe is an avid roleplaying game enthusiast and software developer. The NPC Generator is born out of a passion for streamlining game preparation and enhancing spontaneous storytelling in RPG sessions.
 
 Thank you for using the NPC Generator. Happy gaming!
+
