@@ -1,15 +1,15 @@
 {
   "name": "NPC Generator",
-  "description": "Generates random NPCs for Owlbear Rodeo",
+  "description": "Generate random NPCs with attributes and money",
   "version": "1.0.0",
   "author": "James Coupe",
-  "icon": "https://npc-generator-obr.onrender.com/icon.svg",
+  "icon": "/icon.png",
   "manifest_version": 1,
   "action": {
     "title": "NPC Generator",
-    "icon": "https://npc-generator-obr.onrender.com/icon.svg",
-    "popover": "https://npc-generator-obr.onrender.com/index.html",
-    "height": 500,
+    "icon": "/icon.png",
+    "popover": "/",
+    "height": 600,
     "width": 400
   }
 }
