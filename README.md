@@ -58,6 +58,7 @@ If you encounter any issues or have suggestions for improvement, please don't he
 
 - GitHub Issues: [https://github.com/jimpeccable/npc-generator/issues](https://github.com/jimpeccable/npc-generator/issues)
 - Email: thefenexpanse@gmail.com
+- Web: https://sites.google.com/view/npcgenerator-jimpeccable/home
 
 ## Future Plans
 
