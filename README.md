@@ -49,6 +49,7 @@ The NPC Generator is a powerful tool designed to enhance your roleplaying game e
 ## Screenshots
 
 ![NPC Generator Interface](https://npc-generator-obr.onrender.com/screenshot1.png)
+
 *The simple and intuitive interface of the NPC Generator*
 
 ## Support
